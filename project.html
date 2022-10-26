@@ -7,29 +7,38 @@
     </head>
     <body>
 
-        <hr/>
-        <h2>TODO List</h2>
-        <p>What do you want to store on the list?</p>
+     
+        <h2 id="header1">To-Do List</h2>
+        <p>What do you want to store on the list? Click on a task on the to-do list to mark it as done.</p>
 
-            <fieldset>
+           
                 <div>
-                    <label for="ToDo">ToDo
+                    <label for="ToDo">
                         <input id="To-Do" type="text" name="ToDo" required>
                     </label>
                     <input id="submit" type="submit" value="Add to the list" onclick="addToList()">
                     <span id="errorfield"></span>
                 </div>
 
-          </fieldset>
+        
 
 
         <ul id="todolist">
-            <li>Eat</li>
-            <li>Sleep</li>
-            <li>Ghost</li>
-            <li>Repeat</li>
+            
         </ul>
-     
+
+        <ul id="newList" style="display:none"></ul> 
+        <h3 id="donetasks">Done tasks</h3>
+        <ul id="uniquelist"></ul>
+
+        <input id="clearselected" type="submit" value="Empty done task list" onclick="clearSelected()">
+        <input id="deleteselected" type="submit" value="Delete all done tasks from to-do list" onclick="deleteDone()">
+        
+
+
+
+        <p id="test"></p>
+
 
         
 
